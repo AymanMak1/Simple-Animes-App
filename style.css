@@ -1,0 +1,57 @@
+@font-face {
+  font-family: Naruto;
+  src: url(./fonts/njnaruto.ttf);
+}
+
+body,
+html {
+  overflow-x: hidden;
+  background-color: #333;
+  color: white;
+  font-family: "Baloo Tamma 2", cursive;
+}
+
+.container-fluid {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: Naruto;
+}
+
+.animes-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  overflow-x: scroll;
+  justify-content: stretch;
+}
+
+.animes-row > * {
+  flex-basis: 20rem;
+  flex-shrink: 0;
+}
+.animes-row .card {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  background-color: #333;
+}
+
+.animes-row .card-title {
+  font-weight: 600;
+}
+.animes-row .card > .card-content {
+  flex-grow: 1;
+}
+
+.animes-row .card > .card-image {
+  flex-basis: 25rem;
+  flex-shrink: 0;
+  overflow-y: hidden;
+}
+
+input {
+  color: white;
+}
